@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ItemModule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 80vh;
+    }
+    input {
+      width: 200px;
+      height: 40px;
+      border: solid;
+      font-size: 20px;
+    }
+    button {
+      border: none;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: aqua;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+  <body ng-controller="ItemController">
+    <h1>List 3 items</h1>
+
+    <label for="input">Enter comma separated values</label>
+    <input type="text" ng-model="items" />
+    {{items}}
+    <br />
+    <button ng-click="checkItem()">Check if too much</button>
+    {{message}}
+  </body>
+</html>
