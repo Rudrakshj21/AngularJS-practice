@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ExpressionModule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expressions and interpolation</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="ExpressionController">
+    <h1>Expressions and Interpolation</h1>
+    <h2><em>{{name}} has Quote of the day for you {{sayMessage()}} </em></h2>
+    <div>
+      <button ng-click="play()">change image</button>
+      <img
+        ng-src="img/{{currentPic}}.avif"
+        alt=""
+        style="width: 200px; height: 200px; border-radius: 50%"
+      />
+    </div>
+  </body>
+</html>
