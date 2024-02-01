@@ -15,11 +15,13 @@
     <h1>Filters</h1>
     <div ng-controller="MsgController">
       {{name}} has a message for you: <br />
-      {{sayMessage()}}
+      Original : {{sayMessage()}}
       <div>
         <button ng-click="feedYaakov()">Feed Yaakov</button>
         <br />
-        Cost : {{cookieCost | currency : ₹ :1 }}
+        Filtered : {{sayLovesMessage()}}
+        <br />
+        Filtered with custom  args : {{'Hello its me' | truth : 'me' : 'Rudraksh'}}
         <br />
         <img ng-src="images/yaakov_{{stateOfBeing}}.png" />
       </div>

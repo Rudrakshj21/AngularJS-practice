@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="practiceApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div ng-controller="Ctrl">
+      Your name :
+      <input type="text" ng-model="name" ng-keyup="calculateVal()" />
+      <br />
+      <span> {{name}} Total Val : {{val}} </span>
+      <br />
+
+      <input type="text" ng-model="lowername" ng-blur="upper()" />
+        <br>
+      <span>employee name : <span ng-bind="employee.name"></span> </span>
+      <span>employee age :  {{employee.age}}</span>
+    </div>
+  </body>
+</html>
