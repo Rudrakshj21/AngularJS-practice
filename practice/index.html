@@ -16,9 +16,25 @@
       <br />
 
       <input type="text" ng-model="lowername" ng-blur="upper()" />
-        <br>
+      <br />
       <span>employee name : <span ng-bind="employee.name"></span> </span>
-      <span>employee age :  {{employee.age}}</span>
+      <span>employee age : {{employee.age}}</span>
+      <div>
+        <input type="text" ng-model="random" />
+        <span> {{random}} </span>
+        <span>{{sayMessage()}}</span>
+      </div>
+      <br />
+      <span>Amount : {{money | currency : '$' : 4}} </span>
+      <br />
+      <span
+        >Use filter in frontend {{'Hello my name is my name is ....' | test :
+        true}}</span
+      >
+      <br />
+      <br />
+      <span>DIgest cycle</span>
+      <button ng-click="showNumberOfWatchers()">Log no of watchers</button>
     </div>
   </body>
 </html>

@@ -34,10 +34,11 @@
     <h1>List 3 items</h1>
 
     <label for="input">Enter comma separated values</label>
-    <input type="text" ng-model="items" />
+    <input type="text" ng-model="items" ng-style="getBorderColor()" />
     {{items}}
     <br />
     <button ng-click="checkItem()">Check if too much</button>
-    {{message}}
+    <span ng-style="getColor()"> {{message}} </span>
+    <br />
   </body>
 </html>

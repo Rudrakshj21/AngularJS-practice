@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One time binding</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="ctrl">
+    <div>2-way 1-way 1-Time binding</div>
+    <button ng-click="showNumberOfWatchers()">Log # of watchers</button>
+    <br />
+    <button ng-click="setFullName()">Set Full Name</button>
+    <br />
+    Full name is{{ :: fullName}}
+    <br />
+    <button ng-click="logFirstName()">Log first Name</button>
+    <br />
+    <button ng-click="logFullName()">Log full Name</button>
+    <br />
+    <div>
+      <input type="text" ng-model="firstName" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="digestApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="digestCtrl">
+    
+    <div>
+      <button ng-click="watcherNum()">show watcher count</button>
+    </div>
+    <div>
+      <button ng-click="upCounter()">Increment Counter</button>
+      <div>Regular counter : {{counter}}</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="digestApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="digestCtrl">
+    <h1>Digest Cycle</h1>
+    <button ng-click="showNumberOfWatchers()">Log # of Watchers</button>
+    <span># of watchers </span>
+    <button ng-click="countOnce()">Count once {{counter}}</button>
+  </body>
+</html>
